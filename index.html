@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Banana You Didn't See</title>
+  <link rel="stylesheet" href="code/styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-bananas" aria-hidden="true">
+      <img src="images/banana-graphic.svg" alt="" />
+      <img src="images/banana-graphic.svg" alt="" />
+      <img src="images/banana-graphic.svg" alt="" />
+    </div>
+    <p class="eyebrow">Bananas with Purpose</p>
+    <h1>The Banana You Didn't See</h1>
+    <p class="subtitle">Meet your banana and follow its journey from farm to shelf.</p>
+  </header>
+
+  <main class="content">
+    <section class="card meet-card">
+      <h2>Meet Your Banana</h2>
+      <div class="meet-grid">
+        <div class="meet-col">
+          <p><strong>Origin:</strong> Limon Province, Costa Rica</p>
+          <p><strong>Farm:</strong> Corbana Partner Farm (Limon)</p>
+        </div>
+        <div class="meet-col">
+          <p><strong>Harvested:</strong> March 12, 2026</p>
+          <p><strong>Arrived In Store:</strong> March 29, 2026</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card media-card">
+      <h2>Farm Snapshot</h2>
+      <p>Photos from the Costa Rica farm environment where this banana journey begins.</p>
+      <div class="farm-gallery">
+        <figure>
+          <img src="images/bananafarm1.jpg" alt="Banana farm view in Limon Province, Costa Rica" />
+          <figcaption>Farm View 1: Growing rows in tropical conditions</figcaption>
+        </figure>
+        <figure>
+          <img src="images/bananafarm2.jpg" alt="Banana plants and harvest area in Costa Rica" />
+          <figcaption>Farm View 2: Harvest area and handling zone</figcaption>
+        </figure>
+        <figure>
+          <img src="images/bananafarm3.jpg" alt="Banana production landscape in Costa Rica" />
+          <figcaption>Farm View 3: Landscape near Corbana partner operations in Limon</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Journey Map</h2>
+      <p>Tap each step to see what happened before this banana reached your cart.</p>
+      <img class="map-image" src="images/journey-map.svg" alt="Map showing banana path from farm to store" />
+
+      <div class="route-controls" aria-label="Journey step controls">
+        <button class="route-step is-active" type="button" data-step="1">1. Farm</button>
+        <button class="route-step" type="button" data-step="2">2. Packhouse</button>
+        <button class="route-step" type="button" data-step="3">3. Port</button>
+        <button class="route-step" type="button" data-step="4">4. U.S. Port</button>
+        <button class="route-step" type="button" data-step="5">5. Ripening</button>
+        <button class="route-step" type="button" data-step="6">6. Whole Foods</button>
+      </div>
+
+      <div class="route-detail" id="routeDetail" aria-live="polite">
+        Farm (Corbana partner farm, Limon Province): Bananas are harvested near Guapiles and tagged for traceability.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Who Would You Thank?</h2>
+      <p>From growers to store teams, this banana reached you through many hands.</p>
+      <form class="thanks-form">
+        <label for="thanks">My thank-you message:</label>
+        <textarea id="thanks" name="thanks" rows="4" placeholder="Thank you to..."></textarea>
+        <button id="shareButton" type="submit">Share Gratitude</button>
+      </form>
+      <p class="small" id="thanksCount">0 shared messages today</p>
+      <div class="thanks-wall" id="thanksWall" aria-live="polite"></div>
+    </section>
+
+    <section class="card quick-action">
+      <h2>Quick Reflection</h2>
+      <p>How many people do you think touched this banana before it reached this shelf?</p>
+      <div class="counter-row">
+        <button id="minusPeople" type="button" aria-label="Decrease estimate">-</button>
+        <output id="peopleCount">8</output>
+        <button id="plusPeople" type="button" aria-label="Increase estimate">+</button>
+      </div>
+      <p class="small">Most bananas involve many roles across farming, packing, transport, and retail.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Systems Thinking • Sustainability • Gratitude</p>
+  </footer>
+
+  <script src="code/script.js"></script>
+</body>
+</html>

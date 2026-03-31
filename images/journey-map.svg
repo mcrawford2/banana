@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 820" role="img" aria-labelledby="mapTitle mapDesc">
+  <title id="mapTitle">Banana Journey Map</title>
+  <desc id="mapDesc">Route map from Limon Province, Costa Rica through multiple real logistics stops to Whole Foods Market in Cambridge, Massachusetts.</desc>
+  <defs>
+    <linearGradient id="ocean" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d8edff" />
+      <stop offset="100%" stop-color="#a8cfef" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#234" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <rect width="1400" height="820" fill="url(#ocean)" />
+
+    <!-- Land masses: refined coastlines for a more realistic North/Central America view -->
+    <!-- North America (Canada + USA main shape) -->
+    <path d="M104 168
+         C142 136 188 116 246 103
+         C296 92 364 90 426 98
+         C486 106 544 124 600 150
+         C664 180 718 214 766 258
+         C812 300 858 360 905 424
+         C941 473 976 505 1012 521
+         C1050 538 1088 536 1135 520
+         C1188 502 1242 472 1279 430
+         C1308 398 1326 354 1332 317
+         C1338 280 1328 253 1306 238
+         C1288 226 1266 222 1238 222
+         C1205 222 1166 228 1122 236
+         C1080 244 1043 240 1008 224
+         C971 207 938 188 905 170
+         C864 148 821 132 770 124
+         C724 116 676 116 636 122
+         C604 126 580 126 559 116
+         C528 101 486 90 435 82
+         C375 73 315 73 259 84
+         C212 94 170 114 136 141
+         C114 158 102 168 104 168 Z"
+      fill="#d6e6b6" stroke="#76945f" stroke-width="3" />
+
+    <!-- Greenland -->
+    <path d="M946 82
+         C978 62 1024 52 1064 61
+         C1094 69 1116 87 1122 112
+         C1128 138 1116 162 1093 176
+         C1067 193 1028 198 992 187
+         C962 178 940 158 934 136
+         C927 115 932 95 946 82 Z"
+      fill="#dce9bd" stroke="#76945f" stroke-width="3" />
+
+    <!-- Mexico (with Baja peninsula + Gulf bend) -->
+    <path d="M548 366
+         C578 378 612 397 654 424
+         C698 453 735 486 760 518
+         C779 543 784 566 773 584
+         C760 605 735 611 709 600
+         C682 589 656 566 631 541
+         C607 517 584 500 555 486
+         C526 472 501 454 487 432
+         C473 411 474 390 488 374
+         C501 360 523 358 548 366 Z"
+      fill="#d6e6b6" stroke="#76945f" stroke-width="3" />
+
+    <!-- Central America isthmus -->
+    <path d="M736 604
+         C764 611 792 622 824 637
+         C852 650 878 657 904 657
+         C924 657 939 661 948 670
+         C956 678 955 688 944 697
+         C930 709 908 714 881 712
+         C848 709 812 698 779 679
+         C747 661 722 641 707 622
+         C697 609 704 601 722 600
+         C727 600 732 601 736 604 Z"
+      fill="#d6e6b6" stroke="#76945f" stroke-width="3" />
+
+    <!-- Caribbean islands -->
+    <path d="M1001 646 C1013 641 1027 642 1037 650 C1025 656 1012 657 1001 646 Z"
+      fill="#d6e6b6" stroke="#76945f" stroke-width="2" />
+    <path d="M1049 632 C1061 626 1074 628 1084 635 C1071 642 1058 642 1049 632 Z"
+      fill="#d6e6b6" stroke="#76945f" stroke-width="2" />
+    <path d="M1092 615 C1103 610 1115 611 1124 618 C1112 625 1099 625 1092 615 Z"
+      fill="#d6e6b6" stroke="#76945f" stroke-width="2" />
+    <path d="M1130 598 C1140 593 1150 594 1158 601 C1148 608 1137 609 1130 598 Z"
+      fill="#d6e6b6" stroke="#76945f" stroke-width="2" />
+
+    <!-- Northern South America for context -->
+    <path d="M790 760
+         C842 742 904 733 970 733
+         C1031 734 1093 744 1143 764
+         L1143 820
+         L790 820 Z"
+      fill="#d1e1aa" stroke="#76945f" stroke-width="3" />
+
+  <!-- Route line with six real stops -->
+  <path d="M860 654
+           C886 646 905 640 924 634
+           C950 618 978 602 1007 588
+           C1036 560 1056 538 1083 515
+           C1118 454 1147 414 1186 376
+           C1212 338 1230 308 1248 278"
+        fill="none" stroke="#f3c416" stroke-width="18" stroke-linecap="round" stroke-dasharray="22 14" />
+  <path d="M860 654
+           C886 646 905 640 924 634
+           C950 618 978 602 1007 588
+           C1036 560 1056 538 1083 515
+           C1118 454 1147 414 1186 376
+           C1212 338 1230 308 1248 278"
+        fill="none" stroke="#1f6d3f" stroke-width="5" stroke-linecap="round" />
+
+  <!-- Stop markers and labels -->
+  <g font-family="Verdana, sans-serif" filter="url(#shadow)">
+    <circle cx="860" cy="654" r="14" fill="#1f6d3f" />
+    <text x="888" y="648" font-size="20" font-weight="700" fill="#143728">1. Corbana Partner Farm</text>
+    <text x="888" y="672" font-size="15" fill="#24543d">Guapiles, Costa Rica</text>
+
+    <circle cx="939" cy="630" r="14" fill="#1f6d3f" />
+    <text x="967" y="624" font-size="20" font-weight="700" fill="#143728">2. Packhouse</text>
+    <text x="967" y="648" font-size="15" fill="#24543d">Siquirres, Costa Rica</text>
+
+    <circle cx="1016" cy="583" r="14" fill="#1f6d3f" />
+    <text x="1044" y="577" font-size="20" font-weight="700" fill="#143728">3. Export Port</text>
+    <text x="1044" y="601" font-size="15" fill="#24543d">Puerto Moin, Costa Rica</text>
+
+    <circle cx="1085" cy="512" r="14" fill="#1f6d3f" />
+    <text x="1113" y="506" font-size="20" font-weight="700" fill="#143728">4. U.S. Port</text>
+    <text x="1113" y="530" font-size="15" fill="#24543d">Port of Wilmington, Delaware</text>
+
+    <circle cx="1189" cy="372" r="14" fill="#1f6d3f" />
+    <text x="1217" y="366" font-size="20" font-weight="700" fill="#143728">5. Ripening Center</text>
+    <text x="1217" y="390" font-size="15" fill="#24543d">Chelsea, Massachusetts</text>
+
+    <circle cx="1248" cy="278" r="14" fill="#1f6d3f" />
+    <text x="1276" y="272" font-size="20" font-weight="700" fill="#143728">6. Whole Foods Market</text>
+    <text x="1276" y="296" font-size="15" fill="#24543d">Cambridge, Massachusetts</text>
+  </g>
+
+  <!-- Region labels -->
+  <text x="250" y="210" font-family="Verdana, sans-serif" font-size="26" font-weight="700" fill="#2f503c">NORTH AMERICA</text>
+  <text x="690" y="690" font-family="Verdana, sans-serif" font-size="22" font-weight="700" fill="#2f503c">CENTRAL AMERICA</text>
+  <text x="1010" y="760" font-family="Verdana, sans-serif" font-size="20" fill="#335f49">Caribbean Sea</text>
+  <text x="1030" y="468" font-family="Verdana, sans-serif" font-size="14" fill="#2f503c">Atlantic shipping corridor</text>
+
+  <rect x="34" y="24" width="1206" height="96" rx="14" fill="#ffffff" opacity="0.95" />
+  <text x="60" y="66" fill="#1f4230" font-family="Verdana, sans-serif" font-size="38" font-weight="700">The Banana You Didn't See: Route Map</text>
+  <text x="60" y="101" fill="#2f5b44" font-family="Verdana, sans-serif" font-size="22">Limon, Costa Rica -> Puerto Moin -> Wilmington, DE -> Chelsea, MA -> Whole Foods (Cambridge, MA)</text>
+</svg>

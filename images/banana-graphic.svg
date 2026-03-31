@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 120" role="img" aria-labelledby="bananaTitle bananaDesc">
+  <title id="bananaTitle">Stylized banana</title>
+  <desc id="bananaDesc">Curved yellow banana illustration with green stem.</desc>
+  <defs>
+    <linearGradient id="bananaFill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe98a"/>
+      <stop offset="60%" stop-color="#f4c51d"/>
+      <stop offset="100%" stop-color="#d9a900"/>
+    </linearGradient>
+    <linearGradient id="bananaShade" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <path d="M42 78 C76 105, 138 99, 184 52 C192 44, 196 36, 196 30 C184 42, 170 50, 154 55 C122 66, 90 64, 61 48 C44 39, 30 26, 23 12 C20 28, 26 45, 42 78 Z" fill="url(#bananaFill)" stroke="#9b7a00" stroke-width="3"/>
+  <path d="M54 74 C82 92, 130 88, 171 55" fill="none" stroke="url(#bananaShade)" stroke-width="7" stroke-linecap="round"/>
+  <path d="M18 8 C25 12, 33 17, 37 24 C39 28, 35 33, 30 31 C21 27, 14 18, 12 11 C11 9, 14 7, 18 8 Z" fill="#2a6e3f" stroke="#174b2b" stroke-width="2"/>
+  <circle cx="194" cy="30" r="4.4" fill="#6b4e1f"/>
+</svg>
