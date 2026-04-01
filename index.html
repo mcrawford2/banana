@@ -13,49 +13,67 @@
       <img src="images/banana-graphic.svg" alt="" />
       <img src="images/banana-graphic.svg" alt="" />
     </div>
-    <p class="eyebrow">Bananas with Purpose</p>
+    <p class="eyebrow">Meet Your Banana</p>
     <h1>The Banana You Didn't See</h1>
     <p class="subtitle">Meet your banana and follow its journey from farm to shelf.</p>
   </header>
 
   <main class="content">
     <section class="card meet-card">
-      <h2>Meet Your Banana</h2>
       <div class="meet-grid">
-        <div class="meet-col">
+        <div class="meet-col meet-col-left">
           <p><strong>Origin:</strong> Limon Province, Costa Rica</p>
           <p><strong>Farm:</strong> Corbana Partner Farm (Limon)</p>
         </div>
-        <div class="meet-col">
-          <p><strong>Harvested:</strong> March 12, 2026</p>
-          <p><strong>Arrived In Store:</strong> March 29, 2026</p>
+        <div class="meet-banana">
+          <img src="images/banana.png" alt="Banana in the center of the traceability summary" />
+        </div>
+        <div class="meet-col meet-col-right">
+          <p><strong>Harvest:</strong> March 12, 2026</p>
+          <p><strong>Arrived in Store:</strong> March 29, 2026</p>
         </div>
       </div>
     </section>
 
     <section class="card media-card">
-      <h2>Farm Snapshot</h2>
-      <p>Photos from the Costa Rica farm environment where this banana journey begins.</p>
       <div class="farm-gallery">
         <figure>
-          <img src="images/bananafarm1.jpg" alt="Banana farm view in Limon Province, Costa Rica" />
+          <button class="farm-photo-button" type="button" data-full-src="images/bananafarm1.jpg" data-caption="Farm View 1: Growing rows in tropical conditions">
+            <img src="images/bananafarm1.jpg" alt="Banana farm view in Limon Province, Costa Rica" />
+            <span class="farm-photo-hint">Tap to expand</span>
+          </button>
           <figcaption>Farm View 1: Growing rows in tropical conditions</figcaption>
         </figure>
         <figure>
-          <img src="images/bananafarm2.jpg" alt="Banana plants and harvest area in Costa Rica" />
+          <button class="farm-photo-button" type="button" data-full-src="images/bananafarm2.jpg" data-caption="Farm View 2: Harvest area and handling zone">
+            <img src="images/bananafarm2.jpg" alt="Banana plants and harvest area in Costa Rica" />
+            <span class="farm-photo-hint">Tap to expand</span>
+          </button>
           <figcaption>Farm View 2: Harvest area and handling zone</figcaption>
         </figure>
         <figure>
-          <img src="images/bananafarm3.jpg" alt="Banana production landscape in Costa Rica" />
+          <button class="farm-photo-button" type="button" data-full-src="images/bananafarm3.jpg" data-caption="Farm View 3: Landscape near Corbana partner operations in Limon">
+            <img src="images/bananafarm3.jpg" alt="Banana production landscape in Costa Rica" />
+            <span class="farm-photo-hint">Tap to expand</span>
+          </button>
           <figcaption>Farm View 3: Landscape near Corbana partner operations in Limon</figcaption>
         </figure>
       </div>
     </section>
 
     <section class="card">
-      <h2>Journey Map</h2>
-      <p>Tap each step to see what happened before this banana reached your cart.</p>
-      <img class="map-image" src="images/journey-map.svg" alt="Map showing banana path from farm to store" />
+      <p class="route-intro">Tap each step to see what happened before this banana reached your cart.</p>
+      <div class="map-container">
+        <img class="map-image" src="images/americas.jpg" alt="Map showing banana path from farm to store" />
+        <div class="map-pinpoints">
+          <button class="map-pinpoint" data-step="1" type="button" aria-label="Farm location"></button>
+          <button class="map-pinpoint" data-step="2" type="button" aria-label="Packhouse location"></button>
+          <button class="map-pinpoint" data-step="3" type="button" aria-label="Port location"></button>
+          <button class="map-pinpoint" data-step="4" type="button" aria-label="U.S. Port location"></button>
+          <button class="map-pinpoint" data-step="5" type="button" aria-label="Ripening center location"></button>
+          <button class="map-pinpoint" data-step="6" type="button" aria-label="Whole Foods store location"></button>
+        </div>
+      </div>
 
       <div class="route-controls" aria-label="Journey step controls">
         <button class="route-step is-active" type="button" data-step="1">1. Farm</button>
@@ -71,34 +89,45 @@
       </div>
     </section>
 
-    <section class="card">
-      <h2>Who Would You Thank?</h2>
-      <p>From growers to store teams, this banana reached you through many hands.</p>
-      <form class="thanks-form">
-        <label for="thanks">My thank-you message:</label>
-        <textarea id="thanks" name="thanks" rows="4" placeholder="Thank you to..."></textarea>
-        <button id="shareButton" type="submit">Share Gratitude</button>
-      </form>
-      <p class="small" id="thanksCount">0 shared messages today</p>
-      <div class="thanks-wall" id="thanksWall" aria-live="polite"></div>
-    </section>
+    <div class="side-by-side-sections">
+      <section class="card thanks-section">
+        <h2>Who Would You Thank?</h2>
+        <p>From growers to store teams, this banana reached you through many hands.</p>
+        <form class="thanks-form">
+          <textarea id="thanks" name="thanks" rows="4" placeholder="Thank you to..."></textarea>
+          <button id="shareButton" type="submit">Share Gratitude</button>
+        </form>
+        <p class="small" id="thanksCount">0 shared messages today</p>
+        <div class="thanks-wall" id="thanksWall" aria-live="polite"></div>
+      </section>
 
-    <section class="card quick-action">
-      <h2>Quick Reflection</h2>
-      <p>How many people do you think touched this banana before it reached this shelf?</p>
-      <div class="counter-row">
-        <button id="minusPeople" type="button" aria-label="Decrease estimate">-</button>
-        <output id="peopleCount">8</output>
-        <button id="plusPeople" type="button" aria-label="Increase estimate">+</button>
-      </div>
-      <p class="small">Most bananas involve many roles across farming, packing, transport, and retail.</p>
-    </section>
+      <section class="card quick-action">
+        <h2>Quick Reflection</h2>
+        <p>How many people do you think touched this banana before it reached this shelf?</p>
+        <div class="counter-row">
+          <button id="minusPeople" type="button" aria-label="Decrease estimate">-</button>
+          <output id="peopleCount">8</output>
+          <button id="plusPeople" type="button" aria-label="Increase estimate">+</button>
+        </div>
+        <button id="guessButton" type="button">Share Guess</button>
+        <p class="small" id="guessCount">0 guesses today</p>
+        <div class="guess-wall" id="guessWall" aria-live="polite"></div>
+      </section>
+    </div>
 
   </main>
 
   <footer class="footer">
     <p>Systems Thinking • Sustainability • Gratitude</p>
   </footer>
+
+  <div class="gallery-lightbox" id="galleryLightbox" hidden>
+    <div class="gallery-lightbox-panel" role="dialog" aria-modal="true" aria-labelledby="galleryLightboxCaption">
+      <button class="gallery-lightbox-close" id="galleryLightboxClose" type="button" aria-label="Close expanded image">Close</button>
+      <img id="galleryLightboxImage" src="" alt="" />
+      <p id="galleryLightboxCaption" class="gallery-lightbox-caption"></p>
+    </div>
+  </div>
 
   <script src="code/script.js"></script>
 </body>
