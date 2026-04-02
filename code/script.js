@@ -269,6 +269,12 @@ function alignActionButtons() {
     return;
   }
 
+  // Disable cross-column alignment when sections stack on small screens.
+  if (window.innerWidth <= 560) {
+    guessButton.style.marginTop = "0.75rem";
+    return;
+  }
+
   // Reset before measuring to avoid compounding margin changes.
   guessButton.style.marginTop = "0px";
 
@@ -280,7 +286,7 @@ function alignActionButtons() {
     return;
   }
 
-  guessButton.style.marginTop = `${Math.max(delta, 0)}px`;
+  guessButton.style.marginTop = `${delta}px`;
 }
 
 function pruneExpiredEntries(value) {

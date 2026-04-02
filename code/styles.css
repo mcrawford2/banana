@@ -526,6 +526,8 @@ textarea:focus,
 #guessButton {
   display: block;
   justify-self: center;
+  margin-left: auto;
+  margin-right: auto;
   border: 2px solid #a77f00;
   background: var(--banana-yellow);
   color: #173b25;
